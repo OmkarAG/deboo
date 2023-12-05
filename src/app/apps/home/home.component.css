@@ -1,0 +1,38 @@
+.banner-innerpage{
+    opacity: 0.9;
+}
+.btn2{
+    color:#007FFF !important;
+    font-weight:700 !important;
+    font-size: 18x !important;
+    border:2px solid #007FFF !important;
+    width: 274px !important;
+      height: 36px !important;
+      padding-top: 4px !important;
+}
+/* .titleDeboo{
+    font-size: 45;
+} */
+/* @media screen  and (max-device-width:321px) and (orientation: portrait) {
+    .btn2{
+        color:#007FFF !important;
+        font-weight:700 !important;
+        font-size: 12px !important;
+        border:2px solid #007FFF !important;
+        width: 130px !important;
+          height: 36px !important;
+    }
+} */
+@media only screen and (max-width: 365px) {
+    .btn2{
+        color: #007FFF !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    border: 2px solid #007FFF !important;
+    width: 130px !important;
+    height: 36px !important;
+    padding-top: 6px !important;
+    padding-right: 3px !important;
+    padding-left: 3px !important;
+    }
+  }
