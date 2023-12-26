@@ -1,0 +1,33 @@
+.title {
+    font-family: "Avenir", sans-serif;
+    text-align: center;
+    color: black;
+    margin-top: -70px;
+  }
+  
+  @media only screen and (max-width: 768px) and (orientation: portrait) {
+    .title {
+      font-size: 30px;
+      margin-left: -10px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) and (orientation: portrait) {
+    .title {
+      font-size: 30px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 1280px) and (orientation: portrait) {
+    .title {
+      font-size: 40px !important;;
+      margin-left: -10px !important;;
+    }
+  }
+  @media screen  and (max-device-width:280px)  and (orientation: portrait) {
+    .title {
+      font-size: 20px !important;;
+      margin-left: -10px !important;;
+    }
+
+  }

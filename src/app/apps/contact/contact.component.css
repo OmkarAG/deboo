@@ -33,3 +33,25 @@
     }
 }
 
+
+@media screen  and (max-device-width:280px) {
+    .contact{
+        width: 210px;
+        height: 170px;
+        border: 1px solid black;
+       margin: 39px auto ;
+       font-weight: bold;
+       border-radius: 10px;
+       cursor: pointer;
+    
+    }
+    .mail{
+        font-size: 11px;
+    }
+    .phone{
+        font-size: 13px;
+    }
+    .banner-innerpage{
+        margin-left: -30px;
+    }
+}

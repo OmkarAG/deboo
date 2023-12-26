@@ -1,60 +1,72 @@
- <nav class="navbar navbar-expand-lg navbar-fixed-top navbar card-bordered sticky-top">
+<!-- <nav
+  class="navbar navbar-expand-lg navbar-fixed-top navbar card-bordered sticky-top"
+>
+<a class="navbar-brand" routerLink="">
+  <img
+    src="assets/images/logos/ic_launcher.png"
+    class="img-logo"
+    width="60"
+    height="60"
+    alt="wrapkit"
 
- <button class="navbar-toggler" type="button"  data-toggle="collapse" (click)="doStuffOnClick()" data-target="#h6-info" aria-controls="navbarSupportedContent" aria-expanded="!isShown" aria-label="Toggle navigation">
-     <!-- <span class="navbar-toggler-icon"></span>  -->
-     <span class="ti-menu"></span>
-  </button> 
-<div class="collapse navbar-collapse hover-dropdown font-14 ml-auto" id="h6-info" #navhide [ngClass]="{'show':!isShown }" >
-    <ul class="navbar-nav ml-auto">
+  />
+
+  <a class="navbar-name" id="slogun" style="margin: 2px;">Intelligent<br />Hygiene</a>
 
 
-        <li class="nav-item" [routerLinkActive]="['']" >
-            <a class="nav-link" routerLink="/">
-                Home
-            </a>
-        </li>
-        <li class="nav-item" [routerLinkActive]="['active']" > 
-            <a class="nav-link" routerLink="/about">
-                About
-            </a>
-        </li>
-        <li class="nav-item" [routerLinkActive]="['active']">
-            <a class="nav-link" routerLink="/services">
-                Services
-            </a>
-        </li>
-        <li class="nav-item" [routerLinkActive]="['active']">
-            <a class="nav-link" routerLink="/topup">
-                Top Up
-            </a>
-        </li>
-        <li class="nav-item" [routerLinkActive]="['active']">
-            <a class="nav-link" routerLink="/locations">
-                Locations
-            </a>
-        </li>
-        <li class="nav-item" [routerLinkActive]="['active']">
-            <a class="nav-link" routerLink="/blog">
-                Blog
-            </a>
-        </li>
-        <li class="nav-item" [routerLinkActive]="['active']">
-            <a class="nav-link" routerLink="/awards">
-                Awards
-            </a>
-        </li>
-        <li class="nav-item" [routerLinkActive]="['active']">
-            <a class="nav-link" routerLink="/media">
-                Media
-            </a>
-        </li>
-        <li class="nav-item" [routerLinkActive]="['active']">
-            <a class="nav-link" routerLink="/contact">
-                Contact
-            </a>
-        </li>
-        
+</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    (click)="doStuffOnClick()"
+    data-target="#h6-info"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="!isShown"
+    aria-label="Toggle navigation"
+  >
+
+    <span class="ti-menu"></span>
+  </button>
+  <div
+  class="collapse navbar-collapse" id="navbarSupportedContent"
+[ngClass]="{ show: !isShown }"
+  >
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" [routerLinkActive]="['']">
+        <a class="nav-link" routerLink="/"> Home </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" routerLink="/about"> About </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" routerLink="/services"> Services </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" routerLink="/topup"> Top Up </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" routerLink="/locations"> Locations </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" routerLink="/blog"> Blog </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" routerLink="/awards"> Awards </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" routerLink="/media"> Media </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" routerLink="/contact"> Contact </a>
+      </li>
     </ul>
+  </div>
+</nav> -->
 
-</div>
-</nav>
+
+<!-- class="collapse navbar-collapse hover-dropdown"
+id="h6-info"
+#navhide
+[ngClass]="{ show: !isShown }" -->
+

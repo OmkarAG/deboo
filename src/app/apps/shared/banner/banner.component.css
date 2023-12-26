@@ -1,6 +1,296 @@
-
-.banner-innerpage {
+/* .banner-innerpage {
     padding: 311px 0 100px;
     background-size: cover;
     background-position: center center;
+} */
+/* .active {
+  color: yellow;
+}
+.nav-link {
+  color: #188ef4;
+} */
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0px 0 9px black;
+  margin-bottom: 8px;
+}
+.navbar-brand {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+.brand-companyname {
+ 
+  color: #188ef4;
+  font-family: "Avenir", sans-serif;
+}
+.container-fluid {
+  background-color: #fff;
+}
+
+.navbar-nav {
+  margin-left: 24%;
+  gap: 1rem;
+  font-family: "Avenir", sans-serif;
+}
+.nav-item .nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar-nav {
+    margin-top: 20px;
+    margin-left: 40%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .nav-item .nav-link:hover {
+    width: 90px;
+  }
+  .nav-item .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-item .nav-link:hover::after {
+    width: 100%;
+  }
+}
+
+.nabar {
+  font-size: 62.5%;
+  font-family: "Avenir", sans-serif;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  /* box-shadow: 0px 5px 10px 0px #aaa; */
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 095;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  font-family: "Avenir", sans-serif;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.navbar a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+.navbar-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  background: #fff;
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar a:hover {
+  color: #188ef4;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .navbar {
+    opacity: 0.99;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 28px;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    overflow: scroll;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2.5rem;
+  }
+
+  /* .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  } */
+}
+
+@media only screen and (max-width: 500px) and (orientation: portrait) {
+  .navbar-container input[type="checkbox"]:checked ~ .logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1108) and (orientation: portrait) {
+  .navbar-container input[type="checkbox"]:checked ~ .logo {
+    display: none;
+  }
+}
+
+@media screen and(max-width:653) and (orientation: portrait) {
+  .brand-companyname span {
+    font-size: 40px;
+  }
+}
+/* @media screen  and (max-device-width:280px)  and (orientation: portrait) {
+.brand-companyname span{
+  visibility: hidden;
+}
+} */
+@media screen and (max-device-width: 280px) and (orientation: portrait) {
+  .brand-companyname span {
+    visibility: hidden;
+  }
+
+  /* Add a responsive button */
+  .navbar-toggler {
+    display: block;
+   /* Adjust margin as needed */
+    padding: 10px;
+
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /* Hide banner name */
+  .banner-name {
+    display: none;
+  }
+}
+
+/* Add a class for the banner name */
+.banner-name {
+  font-size: 2.3rem;
+  font-family: "Avenir", sans-serif;
 }

@@ -1,0 +1,313 @@
+.banner-innerpage {
+  width: 100%;
+  background-color: #f3f4f6; /* Background color for the back side of the banner */
+  margin: 0;
+  margin-bottom: -120px;
+}
+.row {
+  background-color: #f3f4f6;
+}
+
+.about-us {
+  background-color: #f3f4f6;
+}
+.about-us .title h1 {
+  font-family: "Avenir", sans-serif;
+  margin-left: -20px;
+}
+.about-us p {
+  font-family: "Avenir", sans-serif;
+}
+.slide-content {
+  margin-top: 40px;
+}
+.card {
+  width: 100%;
+  flex-direction: row;
+  background-color: #f3f4f6;
+  justify-content: center;
+  justify-items: center;
+}
+.circular-image {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px;
+  overflow: hidden;
+}
+.circular-image img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+}
+.card h5 {
+  font-size: 20px;
+  font-family: "Avenir", sans-serif;
+  text-align: left;
+  margin-top: 14px;
+}
+
+.about-us .card:hover {
+  box-shadow: 0px 10px 15px -3px rgba(59, 59, 58, 0.473);
+}
+.title {
+  color: black;
+  margin-top: -90px;
+}
+
+/* @media only screen and (max-width: 767px) and (orientation: portrait) {
+  .card {
+    flex-direction: row;
+    background-color: #f3f4f6;
+    width: 160%;
+    margin-left: -70px;
+  }
+  .about-us {
+    height: 100%;
+  }
+  .row {
+    padding: 38px;
+  }
+  .about-us .images {
+    flex-direction: column;
+  }
+  .card-body {
+    margin: 0px 9px;
+  }
+  .card-body .card-title {
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+  .title {
+    font-size: 40px;
+    margin-left: -20px;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .main-heading p {
+    color: black;
+    font-size: 21px;
+  }
+  .slide-content {
+    overflow: visible;
+    border: none;
+  }
+  .circular-image {
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media only screen and(max-width: 1280px) and (orientation: portrait) {
+  .about-us {
+    height: 100%;
+  }
+  .row {
+    padding: 40px;
+  }
+  .about-us .images {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 40px;
+    margin-left: -10px;
+    text-align: center;
+
+    justify-content: space-between;
+  }
+  .main-heading p {
+    color: black;
+    font-size: 22px;
+  }
+  .slide-content {
+    overflow: visible;
+    border: none;
+  }
+}
+.slide-content {
+  width: 100%;
+}
+
+@media only screen and (max-width: 632px) and (orientation: portrait) {
+  .card {
+    flex-direction: row;
+    background-color: #f3f4f6;
+    width: 160%;
+    margin-left: -70px;
+  }
+  .about-us {
+    height: 100%;
+  }
+  .row {
+    padding: 38px;
+  }
+  .about-us .images {
+    flex-direction: column;
+  }
+  .card-body {
+    margin: 0px 9px;
+  }
+  .card-body .card-title {
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+  .title {
+    font-size: 40px;
+    margin-left: -20px;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .main-heading p {
+    color: black;
+    font-size: 21px;
+  }
+  .slide-content {
+    overflow: visible;
+    border: none;
+  }
+  .circular-image {
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+  }
+} */
+/* @media screen and (max-device-width: 280px) and (orientation: portrait) {
+  .main-heading {
+    padding: 0%;
+  }
+
+  .card {
+    flex-direction: row;
+    background-color: #f3f4f6;
+    width: 160%;
+    margin-left: -70px;
+  }
+  .about-us {
+    height: 100%;
+  }
+ 
+  .about-us .images {
+    flex-direction: column;
+  }
+  .card-body {
+    margin: 0px 9px;
+  }
+  .card-body .card-title {
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+  .title {
+    font-size: 20px;
+    margin-left: -10px;
+    text-align: center;
+  }
+  .main-heading p {
+    color: black;
+    font-size: 21px;
+  }
+  .slide-content {
+    overflow: visible;
+    border: none;
+  }
+  .circular-image {
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+  }
+  .slide-content {
+    margin-left: 40px;
+  }
+} */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .card {
+    flex-direction: column;
+    background-color: #f3f4f6;
+    width: 100%;
+  
+  }
+  .about-us {
+    height: auto;
+  }
+  .row {
+    padding: 20px 20px;
+  }
+  .about-us .img{
+    flex-direction: column;
+    
+
+  }
+  .card-body {
+    margin: 10px;
+  }
+  .card-body .card-title {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .title {
+    font-size: 30px;
+    margin-left: 0;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .main-heading p {
+    color: black;
+    font-size: 18px;
+  }
+  .slide-content {
+    overflow: visible;
+    border: none;
+  }
+  .circular-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px auto; /* Center the image horizontally */
+    display: block; /* Ensure the margin auto works for centering */
+  }/* 
+}
+
+@media only screen and (max-width: 1280px) and (orientation: portrait) {
+  .about-us .images {
+    flex-direction: row;
+    
+  }
+  .title {
+    font-size: 35px;
+    margin-left: 0;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .main-heading p {
+    color: black;
+    font-size: 20px;
+  }
+  .slide-content {
+    overflow: visible;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 632px) and (orientation: portrait) {
+  /* Duplicate your existing styles for this media query if needed */
+}
+
+@media screen and (max-device-width: 280px) and (orientation: portrait) {
+  .circular-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px auto; /* Center the image horizontally */
+    display: block; /* Ensure the margin auto works for centering */
+  }/* Duplicate your existing styles for this media query if needed */
+  .card[_ngcontent-qop-c101] {
+    flex-direction: column;
+    background-color: #f3f4f6;
+   padding: 10px ,20px;
+  }
+}
+
